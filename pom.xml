@@ -85,6 +85,13 @@
     </dependency>
 
 
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.7-dmr</version>
+    </dependency>
+
+
   </dependencies>
   <build>
     <finalName>helloworld</finalName>

@@ -20,6 +20,14 @@
         <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    
+    <!--注册拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="com.zou.interceptor"/>
+            <bean class="com.zou.interceptor.LogInInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
     <!-- @ResponseBody 返回 json 格式数据 -->
     <bean id="messageAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
